@@ -1,0 +1,32 @@
+<div class="container">
+<div>
+   <h2>Ajouter Les Electromenagers :</h2>
+</div>
+
+<form > 
+    <div  class="col-sm-2 col-md-2 col-lg-2"> 
+        <label >ID </label>
+        <input type="text" [(ngModel)]="newElectromenagers.id" name="id" class="form-control"> 
+    </div> 
+
+    <div class="col-sm-4 col-md-4 col-lg-4" > 
+        <label >Nom </label>
+        <input type="text"[(ngModel)]= "newElectromenagers.nom" name="nom" class="form-control"> 
+    </div>
+
+<div class="col-sm-2 col-md-2 col-lg-2"> 
+<label >Prix </label>
+<input type="number" [(ngModel)]= "newElectromenagers.prix" name="prix" class="form-control">
+</div> 
+
+<div class="col-sm-4 col-md-4 col-lg-4"> 
+<label >Date création</label> 
+<input type="date" [(ngModel)]= "newElectromenagers.dateCreation" name="dateCreation" class="form-control"> 
+</div> 
+<div class="mt-2">
+            
+<button type="submit" (click)="addElectromenagers()" class="btn btn-success">Ajouter</button> 
+    <div><h3> {{message}} </h3></div>
+</div> 
+</form>
+</div>
